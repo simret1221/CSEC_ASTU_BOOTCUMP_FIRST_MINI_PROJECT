@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="Here is the duide lines,
+         descriptions and tutoriyla about web development ">
+
+        <title>
+            Hiret's Web Page!
+        </title>
+        <script>
+            function validateForm(){
+
+            let name = document.getElementsById("name").value;
+            let imail = document.getElementsById("imail").value;
+             let message = document.getElementsById("message").value;
+
+
+
+             if(name === ""|| imail ===""|| message === ""){
+             alert("All Terms Are Required!")
+             return false
+            }
+            alert("Successfully Submited!")
+            return true;
+
+        }  
+
+        </script>
+
+
+        <style>
+            .Introdution {
+                font-size: 40pt;
+                color :red;
+                
+
+            }
+
+            .Motivation {
+                font-style: normal;
+                font-size: 17pt;
+                color:normal;
+            }
+                
+            
+            img {
+                margin-right: 90pt;
+                border-radius: 100pt;
+                width: 100pt;
+                height: auto;
+               
+            }
+            em{
+                font-style: normal;
+                color:red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>
+            CSEC_ASTU_BOOTCUMP
+        </h1>
+        <p>
+        Simret Adnew Kebede
+        </p>
+
+       
+        <img src="./images/IMG_20251014_184306_642.jpg" alt="Simret">
+       
+        <h2>
+            Introduction
+        </h2>
+        <p class="Introduction">
+            I am Simret Adnew. 
+           Am a third year computer science and engineering student in <em>ASTU</em> .
+            I would like to be a best Frontend Developer.
+           </p>
+
+        <h3>
+            Little Motiovation!
+        </h3>
+
+        <p class ="Motivation">
+            Let us start from scrach together.
+        </p>
+        
+        <form >
+            <label>Name:</label><br>
+            <input type="text" name="name" required><br><br>
+
+            <label >Imail:</label><br>
+            <input type="text" imail="imail" required><br><br>
+            
+            <label >Message:</label>br
+            <input type="text" massage="massage" required><br><br>
+
+            <button type="submit" class="btn btn-primary">Submit</button><br>
+
+
+        </form>
+    </body>
+</html>
